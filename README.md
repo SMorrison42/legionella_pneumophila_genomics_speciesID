@@ -7,6 +7,7 @@ Note: The mask sketch database file exceed the file size for GitHub. There is a 
 
 ## Dependencies 
 Mash/2.0.0
+
 Perl/5.22.1
 
 ## Usage
