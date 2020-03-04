@@ -3,7 +3,7 @@
 ## Project Description
 This docker container performs in silico Legionella spp. identification from Illumina Paired end reads and De novo assemblies. The input file formats are .fastq (for Illumina raw sequencing data) or .fasta/.fa./.fas (for De novo assemblies).
 
-Note: The mask sketch database file exceed the file size for GitHub. There is a list of all the genomes used to generate the Mash sketch in the /db directory of this repo.  The Docker container does contain the entire Mash sketch.
+Note: The Mash sketch database file exceed the file size for GitHub. There is a list of all the genomes used to generate the Mash sketch in the /db directory of this repo.  The Docker container does contain the entire Mash sketch.
 
 ## Dependencies 
 Mash/2.0.0
