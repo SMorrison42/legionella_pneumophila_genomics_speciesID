@@ -24,7 +24,7 @@ docker run -v <your input directory complete path>:/<directory in container> --p
  ``` 
   ## Developed by
   
-  Jason Caravas 
+  [Jason Caravas](https://github.com/jacaravas) 
   
   [Shatavia Morrison](https://github.com/SMorrison42)
   
