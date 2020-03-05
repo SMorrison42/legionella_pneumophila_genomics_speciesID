@@ -16,11 +16,11 @@ Docker:
 
 Illumina Paired End:
 ```
-docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.1 -fastq1 /<directory in container>/R1.fastq -fastq2 /<directory in container>/R2.fastq -quiet > results.
+docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.2 -fastq1 /<directory in container>/R1.fastq -fastq2 /<directory in container>/R2.fastq -quiet > results.
 ```
 Denovo Assemblies:
 ```
-docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.1 -fasta /<directory in container>/<denovo assembly file> -quiet > results.txt
+docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.2 -fasta /<directory in container>/<denovo assembly file> -quiet > results.txt
  ``` 
   ## Developed by
   
