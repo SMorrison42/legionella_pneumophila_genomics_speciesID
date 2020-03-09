@@ -16,12 +16,23 @@ Docker:
 
 Illumina Paired End:
 ```
-docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.2 -fastq1 /<directory in container>/R1.fastq -fastq2 /<directory in container>/R2.fastq -quiet > results.
+docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.6 -fastq1 /<directory in container>/R1.fastq -fastq2 /<directory in container>/R2.fastq  > results.txt
 ```
 Denovo Assemblies:
 ```
-docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.2 -fasta /<directory in container>/<denovo assembly file> -quiet > results.txt
+docker run -v <your input directory complete path>:/<directory in container> --privileged smorrison42/speciesid:0.6 -fasta /<directory in container>/<denovo assembly file> > results.txt
  ``` 
+ 
+ Singularity Pull Container - Do NOT build Mash Sketch file is not in GitHub (exceeded file size limit):
+```
+singularity pull docker://smorrison42/speciesid:0.6
+```
+Singularity Illumina Paired End:
+ ```
+ singularity exec -B <your input directory complete path>:/<directory in container> speciesid-0.6.simg perl /scripts/species_id_tool_agave_3-miseq.pl -fastq1 /<directory in container>/R1.fastq -fastq2 /<directory in container>/R2.fastq  > results.txt
+ ```
+ 
+ 
   ## Developed by
   
   [Jason Caravas](https://github.com/jacaravas) 
