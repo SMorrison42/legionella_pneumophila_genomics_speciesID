@@ -5,6 +5,8 @@ This docker container performs in silico Legionella spp. identification from Ill
 
 Note: The Mash sketch database file exceed the file size for GitHub. There is a list of all the genomes used to generate the Mash sketch in the /db directory of this repo.  The Docker container does contain the entire Mash sketch. Please create an image of the container. If you try to build the container from the source it will fail since the Mash Sketch is not in this repo.
 
+Please use version: SMorrison42/speciesid:0.6
+
 ## Dependencies 
 Mash/2.0.0
 
